@@ -72,7 +72,6 @@ void task_6_poor_copy(int * arr1, int * arr2, int size)
 // print array `arr`
 void task_7_print(int * arr, int size, char delim = ' ')
 {
- 
     for(int i = 0; i < size; ++i)
     {
      std::cout << arr[i] << delim;
