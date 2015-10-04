@@ -25,9 +25,9 @@ int main()
 			ndigit[c - '1']+=1;
 		else
 		  if (c == ' ' || c == '\n' ||c == '\t')
-			++nwhite;
+			nwhite+=1;
 		  else
-			++nother;
+			nother+=1;
 	
 	cout << "source string: " << src << endl << "digits =";
 	for (int i = 0; i < size; ++i)
