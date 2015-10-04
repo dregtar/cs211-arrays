@@ -11,6 +11,20 @@ using namespace std;
  * 
  */
 
+void print_column(int n){
+	if (n < 10){
+		for (int i = 1; i <= n; i += 1)
+			cout << "==";
+	}
+	else {
+		for (int i = 1; i <= n && i < 10; i += 1)
+			cout << "==";
+		for (int i = 10; i <= n; i += 1)
+			cout << "===";
+	}
+
+	cout << endl;
+}
 int main()
 {
 	string src("12 plus 45 minus 39 is 18\n");
@@ -35,4 +49,17 @@ int main()
 	
 	cout << ", white space = " << nwhite 
 		 << ", other = " << nother << endl;
+	cout << endl;
+
+	cout << "            0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 " << endl;
+	cout << "white space ";
+	print_column(nwhite);
+	cout << "   other    ";
+	print_column(nother);
+
+	
+	for (i = 1; i < 10; i += 1){
+		cout << "     " << i << "      ";
+		print_column(ndigit[i - 1]);
+	};
 }
