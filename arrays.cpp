@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
 
-#if 0
+#if 1
 // NOTE: you should move this `if` down as you start solving each task
 
 void task_1()
@@ -12,17 +12,15 @@ void task_1()
      * pedantic flag here means: strictly as in language standard 
      * for explanation see:
      *  https://gcc.gnu.org/onlinedocs/gcc/Variable-Length.html*/
-    int n = 10;
-    int a[n];
+
+	int a[10];
 }
 
 // Task 2
 void task_2()
 {
-    int a[5] = {0};
-    
-    //assert(!a[4]) or assert(a[4]) -- place here one of these and
-    //                                 explain your choice in commit msg
+	int a[5] = { 0 };
+	assert(!a[4]);       
 }
 
 // returns zero
@@ -75,7 +73,7 @@ void task_7_print(int * arr, int size, char delim = ' ')
     // Hint: something wrong here; run this from main()
     for(int i = 0; i <= size; ++i)
     {
-        std::cout << a[i] << delim;
+     //   std::cout << a[i] << delim;
     }
 }
 
