@@ -36,7 +36,7 @@ int main()
 	char c;
 	while ((c = src[i++]) != '\0')
 		if (c >= '0' && c <= '9')
-			ndigit[c - '1']+=1;
+			ndigit[c - '0']+=1;
 		else
 		  if (c == ' ' || c == '\n' ||c == '\t')
 			nwhite+=1;
@@ -58,8 +58,8 @@ int main()
 	print_column(nother);
 
 	
-	for (i = 1; i < 10; i += 1){
+	for (i = 0; i < 10; i += 1){
 		cout << "     " << i << "      ";
-		print_column(ndigit[i - 1]);
+		print_column(ndigit[i]);
 	};
 }
